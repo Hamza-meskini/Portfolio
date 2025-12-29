@@ -37,13 +37,16 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-6 py-4">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    <Link to="home" smooth={true} duration={500} className="cursor-pointer">
-                        <motion.h1
+                    <Link to="home" smooth={true} duration={500} className="focus:outline-none flex items-center gap-2">
+                        <motion.div
                             whileHover={{ scale: 1.05 }}
-                            className="text-2xl font-bold gradient-text"
+                            className="flex items-center gap-2"
                         >
-                            HM
-                        </motion.h1>
+                            <img src="/logo.svg" alt="Hamza Meskini Logo" className="w-10 h-10 object-contain" />
+                            <span className="text-xl font-bold font-heading gradient-text hidden sm:block">
+                                Hamza Meskini
+                            </span>
+                        </motion.div>
                     </Link>
 
                     {/* Desktop Navigation */}

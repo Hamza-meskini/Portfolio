@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { ExternalLink, Github, ChevronLeft, ChevronRight, X, Workflow } from 'lucide-react';
+import { ExternalLink, ChevronLeft, ChevronRight, X, Workflow } from 'lucide-react';
 
 const Projects = () => {
     const ref = useRef(null);
@@ -9,7 +9,7 @@ const Projects = () => {
     const [selectedProject, setSelectedProject] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    // Sentiment Platform Images (9 images)
+    // Sentiment Platform Images (9 images) - Case sensitive fix for Vercel
     const sentimentImages = [
         '/images/Brand sentiment platform images/1 (1).png',
         '/images/Brand sentiment platform images/2 (1).PNG',
@@ -64,20 +64,20 @@ const Projects = () => {
             isAutomation: false
         },
         {
-            title: "Automated Invoice Processing System",
+            title: "Automated Invoice Processing",
             subtitle: "n8n & AI Workflow",
-            description: "Built an autonomous pipeline that monitors email attachments, uses OCR/AI to extract structured data from invoices, and syncs results with a centralized database. Eliminated 100% of manual data entry with 0% human error.",
-            tags: ["n8n", "Python", "PostgreSQL", "Google Drive API", "OCR"],
+            description: "Built an autonomous pipeline that monitors email attachments, uses OCR/AI to extract structured data from invoices. Eliminated 100% of manual entry and streamlined accounting workflows.",
+            tags: ["n8n", "Python", "Deep Learning", "Automation"],
             image: "/images/project_invoice.png",
             hasGallery: false,
             size: "medium",
             isAutomation: true
         },
         {
-            title: "Multi-Channel AI Content Creation Engine",
-            subtitle: "Automated Content Workflow",
-            description: "Designed a workflow that takes a single topic input and automatically generates researched articles, social media snippets (X/LinkedIn), and AI-generated image prompts. Reduced content creation time by 80%.",
-            tags: ["n8n", "OpenAI", "Gemini API", "Reddit Scraper", "Automation"],
+            title: "AI Content Creation Engine",
+            subtitle: "Gemini API & n8n",
+            description: "Designed a workflow that automatically generates researched articles and social media snippets. Reduced research and content creation time by 80%.",
+            tags: ["n8n", "Gemini API", "Content AI", "Workflow"],
             image: "/images/project_content.png",
             hasGallery: false,
             size: "medium",

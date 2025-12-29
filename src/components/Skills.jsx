@@ -15,6 +15,7 @@ const Skills = () => {
         { name: 'Python', icon: Code2, color: 'text-blue-400' },
         { name: 'R', icon: BarChart3, color: 'text-blue-500' },
         { name: 'Java', icon: Code2, color: 'text-orange-500' },
+        { name: 'Spring Boot', icon: Server, color: 'text-green-500' },
         { name: 'JavaScript', icon: Code2, color: 'text-yellow-400' },
         { name: 'TypeScript', icon: Code2, color: 'text-blue-600' },
         { name: 'SQL', icon: Database, color: 'text-cyan-400' },
@@ -53,6 +54,9 @@ const Skills = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
                     Tech <span className="gradient-text">Stack</span>
                 </h2>
+                <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+                    From deep mathematical foundations to building production-ready AI microservices with <span className="text-neon-purple font-semibold">Spring Boot</span> and <span className="text-neon-blue font-semibold">Python</span>.
+                </p>
             </div>
 
             {/* Infinite Scroll Marquee */}
@@ -71,7 +75,7 @@ const Skills = () => {
                             x: {
                                 repeat: Infinity,
                                 repeatType: "loop",
-                                duration: 50,
+                                duration: 60, // Slower duration for readability
                                 ease: "linear",
                             },
                         }}

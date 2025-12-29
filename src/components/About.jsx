@@ -35,8 +35,41 @@ const About = () => {
                         I am a final-year engineering student at{' '}
                         <span className="text-neon-purple font-semibold">FST Mohammedia</span>,
                         passionate about bridging the gap between mathematical modeling and real-world AI solutions.
-
                     </p>
+                </motion.div>
+
+                {/* Mathematical Foundations Section */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: 0.3 }}
+                    className="glass-card p-8 mb-12 border-l-4 border-neon-blue"
+                >
+                    <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <div className="p-2 rounded-lg bg-neon-blue/10">
+                            <span className="text-neon-blue text-xl font-bold">Σ</span>
+                        </div>
+                        Mathematical <span className="gradient-text">Foundations</span>
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="space-y-4">
+                            <p className="text-gray-300">
+                                My background in pure mathematics provides the theoretical depth required to understand, build, and optimize AI architectures from first principles.
+                            </p>
+                            <div className="flex flex-wrap gap-2">
+                                {["Linear Algebra", "Multivariate Calculus", "Statistics", "Optimization Theory"].map((item) => (
+                                    <span key={item} className="px-3 py-1 text-sm rounded-full bg-neon-blue/10 text-neon-blue border border-neon-blue/30">
+                                        {item}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="bg-dark-surface/30 p-4 rounded-xl border border-white/5">
+                            <p className="text-sm text-gray-400 italic">
+                                "This deep mathematical intuition allows me to go beyond just using libraries—I focus on optimization, stability, and the underlying mechanics of neural networks."
+                            </p>
+                        </div>
+                    </div>
                 </motion.div>
 
                 {/* Stats Bar */}
@@ -46,7 +79,7 @@ const About = () => {
                             key={stat.label}
                             initial={{ opacity: 0, y: 30 }}
                             animate={isInView ? { opacity: 1, y: 0 } : {}}
-                            transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
+                            transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
                             className="glass-card p-6 text-center hover-float group cursor-pointer"
                         >
                             <div className="flex justify-center mb-4">

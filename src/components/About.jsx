@@ -32,7 +32,7 @@ const About = () => {
                     className="glass-card p-8 md:p-12 mb-12"
                 >
                     <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-center">
-                        I am a final-year engineering student at{' '}
+                        I am a <span className="text-neon-purple font-semibold">Mathematical and Computer Science Engineer</span> at{' '}
                         <span className="text-neon-purple font-semibold">FST Mohammedia</span>,
                         passionate about bridging the gap between mathematical modeling and real-world AI solutions.
                     </p>

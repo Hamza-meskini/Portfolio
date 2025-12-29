@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 const Hero = () => {
     const [typedText, setTypedText] = useState('');
-    const fullText = "Engineering Student in Math & CS | Data Science & AI Specialist.";
+    const fullText = "Mathematical & Computer Science Engineer | Data Science & AI Specialist.";
 
     useEffect(() => {
         let index = 0;

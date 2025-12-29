@@ -43,29 +43,29 @@ const About = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, delay: 0.3 }}
-                    className="glass-card p-8 mb-12 border-l-4 border-neon-blue"
+                    className="glass-card p-6 md:p-8 mb-12 border-l-4 border-neon-blue"
                 >
-                    <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                        <div className="p-2 rounded-lg bg-neon-blue/10">
-                            <span className="text-neon-blue text-xl font-bold">Σ</span>
+                    <h3 className="text-2xl font-bold mb-6 flex flex-wrap items-center gap-3">
+                        <div className="p-2 rounded-lg bg-neon-blue/10 flex-shrink-0">
+                            <span className="text-neon-blue text-xl font-bold leading-none">Σ</span>
                         </div>
-                        Mathematical <span className="gradient-text">Foundations</span>
+                        <span className="whitespace-nowrap">Mathematical</span> <span className="gradient-text whitespace-nowrap">Foundations</span>
                     </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="space-y-4">
-                            <p className="text-gray-300">
+                            <p className="text-gray-300 text-sm md:text-base leading-relaxed">
                                 My background in pure mathematics provides the theoretical depth required to understand, build, and optimize AI architectures from first principles.
                             </p>
                             <div className="flex flex-wrap gap-2">
                                 {["Linear Algebra", "Multivariate Calculus", "Statistics", "Optimization Theory"].map((item) => (
-                                    <span key={item} className="px-3 py-1 text-sm rounded-full bg-neon-blue/10 text-neon-blue border border-neon-blue/30">
+                                    <span key={item} className="px-3 py-1 text-xs md:text-sm rounded-full bg-neon-blue/10 text-neon-blue border border-neon-blue/30 whitespace-nowrap">
                                         {item}
                                     </span>
                                 ))}
                             </div>
                         </div>
-                        <div className="bg-dark-surface/30 p-4 rounded-xl border border-white/5">
-                            <p className="text-sm text-gray-400 italic">
+                        <div className="bg-dark-surface/50 p-5 rounded-xl border border-white/5 flex items-center">
+                            <p className="text-sm text-gray-400 italic leading-relaxed border-l-2 border-neon-blue/30 pl-4">
                                 "This deep mathematical intuition allows me to go beyond just using libraries—I focus on optimization, stability, and the underlying mechanics of neural networks."
                             </p>
                         </div>

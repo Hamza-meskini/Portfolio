@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-scroll';
 import { useState, useEffect } from 'react';
 
@@ -103,11 +103,6 @@ const Hero = () => {
                                     <ArrowRight className="w-5 h-5" />
                                 </button>
                             </Link>
-
-                            <button className="btn-outline flex items-center gap-2">
-                                <Download className="w-5 h-5" />
-                                Download Resume
-                            </button>
                         </motion.div>
                     </motion.div>
 

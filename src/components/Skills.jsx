@@ -51,12 +51,9 @@ const Skills = () => {
     return (
         <section id="skills" className="py-20 overflow-hidden">
             <div className="section-container">
-                <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+                <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
                     Tech <span className="gradient-text">Stack</span>
                 </h2>
-                <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
-                    From deep mathematical foundations to building production-ready AI microservices with <span className="text-neon-purple font-semibold">Spring Boot</span> and <span className="text-neon-blue font-semibold">Python</span>.
-                </p>
             </div>
 
             {/* Infinite Scroll Marquee */}

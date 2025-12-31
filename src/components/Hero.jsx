@@ -50,13 +50,13 @@ const Hero = () => {
             </div>
 
             <div className="section-container">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    {/* Left Side - Text Content */}
+                <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+                    {/* Text Content - Now Centered */}
                     <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="space-y-6 z-10"
+                        className="space-y-8 z-10 w-full"
                     >
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -86,7 +86,7 @@ const Hero = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.6 }}
-                            className="text-lg text-gray-400 max-w-xl"
+                            className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto"
                         >
                             Passionate about bridging the gap between mathematical modeling and real-world AI solutions.
                         </motion.p>
@@ -95,7 +95,7 @@ const Hero = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.8 }}
-                            className="flex flex-wrap gap-4 pt-4"
+                            className="flex flex-wrap justify-center gap-6 pt-4"
                         >
                             <Link to="projects" smooth={true} duration={500}>
                                 <button className="btn-neon flex items-center gap-2">
@@ -103,43 +103,6 @@ const Hero = () => {
                                     <ArrowRight className="w-5 h-5" />
                                 </button>
                             </Link>
-                        </motion.div>
-                    </motion.div>
-
-                    {/* Right Side - 3D Tilt Card with Photo */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, delay: 0.3 }}
-                        className="flex justify-center lg:justify-end"
-                    >
-                        <motion.div
-                            whileHover={{
-                                rotateY: 5,
-                                rotateX: 5,
-                                scale: 1.05
-                            }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                            className="glass-card p-2 hover-float"
-                            style={{
-                                transformStyle: 'preserve-3d',
-                                perspective: '1000px'
-                            }}
-                        >
-                            <div className="relative">
-                                <div className="absolute inset-0 bg-gradient-neon opacity-20 blur-xl rounded-2xl"></div>
-                                <img
-                                    src="/images/My image.jpg"
-                                    alt="Hamza Meskini"
-                                    className="relative rounded-xl w-80 h-80 md:w-96 md:h-96 object-cover border-2 border-neon-purple/30"
-                                    onError={(e) => {
-                                        // Fallback to placeholder if image doesn't exist
-                                        e.target.src = "https://placehold.co/400x400/1e293b/a855f7?text=Hamza+Meskini";
-                                    }}
-                                />
-                                {/* Glow effect */}
-                                <div className="absolute -inset-1 bg-gradient-neon opacity-30 blur-lg rounded-xl -z-10"></div>
-                            </div>
                         </motion.div>
                     </motion.div>
                 </div>

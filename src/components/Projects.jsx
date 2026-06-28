@@ -24,6 +24,16 @@ const Projects = () => {
 
     const projects = [
         {
+            title: "AI Test Design & Validation Framework",
+            subtitle: "Stellantis - LLM Systems & Automation",
+            description: "Cloud-native AI platform deployed on Databricks Apps that automatically compiles unstructured automotive test requirements into validated, production-ready vTESTstudio bundles, utilizing a deterministic hybrid resolution engine, NetworkX traceability graphs, and live telemetry.",
+            tags: ["Databricks Apps", "LLM Systems", "Python", "NetworkX", "React", "TypeScript"],
+            image: "/images/project_stellantis.png",
+            hasGallery: false,
+            size: "large",
+            isAutomation: true
+        },
+        {
             title: "Brand Sentiment Analysis Platform",
             subtitle: "NextMindz - GenAI Integration",
             description: "Built a comprehensive sentiment analysis platform using Gemini AI, FastAPI, and Next.js. Scraped data from X/Reddit to analyze brand perception with real-time insights.",

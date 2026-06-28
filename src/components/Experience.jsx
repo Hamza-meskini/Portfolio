@@ -10,6 +10,54 @@ const Experience = () => {
 
     const experiences = [
         {
+            role: "AI Engineer Intern (LLM Systems & Automation)",
+            company: "Stellantis",
+            location: "Global Test & Validation Division",
+            project: "AI-Powered Test Design & Validation Platform",
+            period: "Feb. 2026 - Aug. 2026",
+            shortDescription: [
+                "Deployed cloud-native AI framework on Databricks Apps, reducing test design cycles by 90%",
+                "Built hybrid resolution engine validating requirements against 12.9k+ DCI signals to eliminate hallucinations",
+                "Designed interactive Traceability Map dependency graphs and React/TS telemetry dashboard",
+                "Compiled production-ready vTESTstudio bundles including CAPL modules and test trees"
+            ],
+            fullDescription: [
+                {
+                    title: "Cloud-Native AI Framework",
+                    detail: "Deployed an end-to-end, cloud-native AI framework on Databricks Apps adopted by cross-border validation teams (10+ nationalities), reducing test design cycles by 90% (from days to minutes)."
+                },
+                {
+                    title: "Requirements Ingestion",
+                    detail: "Engineered core pipeline to ingest unstructured, raw text automotive testing requirements and translate them into validated, production-ready system test cases."
+                },
+                {
+                    title: "Hybrid Resolution Engine",
+                    detail: "Developed a deterministic hybrid resolution engine (Python, Pydantic) to cross-reference and validate raw text inputs against a Databricks SQL Warehouse containing 12,935 DCI signals, eliminating hallucinations via structural verification."
+                },
+                {
+                    title: "Token Optimization",
+                    detail: "Optimized context window efficiency by shifting data serialization from JSON to YAML configuration schemas, lowering LLM token consumption costs by 30%."
+                },
+                {
+                    title: "Autonomous AI Agent & Manual Overrides",
+                    detail: "Designed a dual-mode interactive refinement interface allowing engineers to either perform direct manual overrides or utilize an Autonomous AI Agent to perform surgical updates on test designs and merge test cases."
+                },
+                {
+                    title: "Jinja2 Compilation & CAPL",
+                    detail: "Built a native Jinja2 compilation engine that automatically packages the verified logic into production-ready vTESTstudio bundles, compiling CAPL modules (.can) and combinatorial test trees via Cartesian product expansion."
+                },
+                {
+                    title: "Traceability Map",
+                    detail: "Architected an interactive Traceability Map leveraging NetworkX to map and render complex dependency graphs directly in the UI, visualizing the programmatic links between requirements, consumer/producer signals, and internal variables."
+                },
+                {
+                    title: "Telemetry Dashboard",
+                    detail: "Constructed an interactive React/TypeScript telemetry dashboard displaying real-time operational KPIs, active usage metrics, and throughput analytics to track platform adoption and ROI for global executive review."
+                }
+            ],
+            color: "from-neon-cyan to-neon-blue"
+        },
+        {
             role: "Software Development & Data Automation Intern",
             company: "Capgemini",
             location: "Casablanca",

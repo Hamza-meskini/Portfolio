@@ -9,8 +9,8 @@ const About = () => {
 
     const stats = [
         { icon: Code2, label: "Years Coding", value: "3+" },
-        { icon: Briefcase, label: "Major Internships", value: "2" },
-        { icon: FolderGit2, label: "Complex Projects", value: "5+" },
+        { icon: Briefcase, label: "Major Internships", value: "3" },
+        { icon: FolderGit2, label: "Complex Projects", value: "6+" },
     ];
 
     return (
